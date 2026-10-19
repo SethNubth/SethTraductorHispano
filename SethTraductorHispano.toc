@@ -1,7 +1,10 @@
-## Interface: 110000
-## Title: SethTraductorHispano |cFF00FF00- WoForever|r
-## Notes: Traductor + Copiar links de todos los chats
+## Interface: 30300
+## Title: |cFF00FF00SethTraductorHispano|r - WoForever
+## Notes: Traductor + Copiar links de todos los chats - Hecho por SethNubth
 ## Author: SethNubth
-## Version: 1.5
+## Version: 1.5.1-Fixed
 ## SavedVariables: SethTraductorDB
-SethTraductorHispano.lua
+
+Core.lua
+Config.lua
+ChatCopy.lua
