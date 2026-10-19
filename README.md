@@ -1,161 +1,56 @@
 <p align="center">
-  <img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/e746fec9-0448-435f-9b6a-cd4b49cf8cbb" />
-
-
-<h1 align="center">🦜 SethTraductorHispano — Loro Edition</h1>
-git add .
-git commit -m "v1.6 Loro Edition Forever Oficial 16001"
-git push origin main
-<p align="center">
-  <b>El addon hispano esencial para World of Warcraft: Forever</b><br/>
-  <i>Traduce. Copia. El loro te avisa.</i>
+  <img src="Logo_Translate.png" width="220" alt="SethTraductorHispano">
 </p>
 
-<p align="center">
-  <a href="https://github.com/SethNubth/SethTraductorHispano/releases"><img src="https://img.shields.io/github/v/release/SethNubth/SethTraductorHispano?label=Versi%C3%B3n&style=for-the-badge&color=00FF00" alt="Version"></a>
-  <a href="https://github.com/SethNubth/SethTraductorHispano"><img src="https://img.shields.io/badge/WoW-Forever%20Oficial%2016001-00AEEF?style=for-the-badge" alt="Forever"></a>
-  <img src="https://img.shields.io/badge/Idioma-ES%20%7C%20EN-FFD700?style=for-the-badge" alt="Idioma">
-  <a href="https://github.com/SethNubth/SethTraductorHispano/stargazers"><img src="https://img.shields.io/github/stars/SethNubth/SethTraductorHispano?style=for-the-badge" alt="Stars"></a>
-</p>
+<h1 align="center">🦜 SethTraductorHispano</h1>
+<h3 align="center">Loro Edition - Traductor Oficial para WoW Forever</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/SethNubth/SethTraductorHispano?style=flat-square" alt="Last Commit">
-  <img src="https://img.shields.io/github/downloads/SethNubth/SethTraductorHispano/total?style=flat-square" alt="Downloads">
-  <img src="https://img.shields.io/badge/Hecho%20por-SethNubth-FF69B4?style=flat-square" alt="Autor">
+  <a href="https://github.com/SethNubth/SethTraductorHispano/releases"><img src="https://img.shields.io/github/v/release/SethNubth/SethTraductorHispano?label=Version&style=for-the-badge&color=brightgreen"></a>
+  <a href="https://github.com/SethNubth/SethTraductorHispano/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SethNubth/SethTraductorHispano?label=License&style=for-the-badge"></a>
+  <img src="https://img.shields.io/badge/Game-Forever%201.60.1-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Interface-16001-orange?style=for-the-badge">
 </p>
 
 ---
 
-### ✨ ¿Qué hace?
+### 🦜 ¿Qué es esto?
+Es un addon para **WoW Forever** que traduce automáticamente las misiones de Inglés a Español en tiempo real. Fue creado para la comunidad hispana que no quiere perderse la historia por el idioma.
 
-**SethTraductorHispano Loro Edition** es un addon ligero y sin dependencias hecho para la comunidad hispana de **World of Warcraft: Forever**.
+Ya no más traductor de Google a lado. El loro traduce por ti.
 
-| | Función | Cómo funciona |
-| :--- | :--- | :--- |
-| 🦜 | **Loro Parlante de Bienvenida** | Al loguear aparece tu loro con headset. Ventana movible, clic para cerrar, auto-cierre en 6 segundos. |
-| 🔗 | **Copiar Links Inteligente** | Haz `Shift + Click Izquierdo` sobre cualquier link `[Item] [Misión] [Logro] [Hechizo]` y se copia directo al chat para pegarlo. |
-| 🔔 | **Avisador de Actualización** | Detecta si hay nueva versión en GitHub. Te muestra popup con el link y mensaje en chat. Nunca te quedas desactualizado. |
-| 💬 | **Comandos Útiles** | `/seth` `/loro` `/seth show` `/seth hide` `/seth version` |
-| 🟢 | **100% Compatible** | Hecho nativamente para la API de **Forever Oficial 1.60.1 (Interface: 16001)**. Sin librerías pesadas.
-### 🦜 SethTraductorHispano - Loro Edition | Forever Oficial
+### ✨ Características
+- Traducción automática EN -> ES al aceptar misiones
+- Sonido de loro cuando hay traducción lista
+- Liviano, no consume FPS
+- Comando rápido `/seth` para probar
+- 100% compatible con Forever Beta (solo `/reload`)
 
-Primera versión oficial para **WoW Forever 1.60.1 (Interface: 16001)**
+### 📦 Instalación en 3 pasos
+1. Ve a **Releases** y baja el `SethTraductorHispano-v1.6-Loro-Edition.zip`
+2. Descomprime el ZIP en:
+   `World of Warcraft\_classic_beta_\Interface\AddOns\`
+3. Entra al juego y escribe `/reload`
 
-#### ✨ ¿Qué hace?
-- Traduce automáticamente las misiones de EN a ES en tiempo real
-- Aviso con sonido de loro cuando hay actualización
-- Comando `/seth` para probar la traducción
-- 100% compatible con Forever Beta
+Tiene que quedarte así:
+`.../AddOns/SethTraductorHispano/SethTraductorHispano.toc`
 
-#### 📦 Instalación
-1. Descarga el `SethTraductorHispano-v1.6.zip` abajo
-2. Extrae en `World of Warcraft\_classic_beta_\Interface\AddOns\`
-3. Dentro del juego haz `/reload`
+### 🎮 Comandos
+| Comando | Función |
+| :--- | :--- |
+| `/seth` | Prueba la traducción |
+| `/seth help` | Muestra ayuda |
+| `/seth on/off` | Activa / Desactiva |
 
-#### 🔧 Changelog v1.6
-- Interface actualizado a 16001
-- Logo Loro Edition agregado
-- Optimización de traducción
-- MIT License
+### 🛠️ Requisitos
+- WoW Forever Oficial Beta
+- Versión del juego: 1.60.1
+- Interface: 16001
 
-Hecho con ❤️ para la comunidad hispana de Forever por SethNubth
----
+### 🤝 Créditos
+Creado por **SethNubth** para toda la comunidad hispana de WoW Forever.
 
-### 📥 Instalación
-
-#### Opción 1: Para WoW Forever OFICIAL (Blizzard) - RECOMENDADO
-> **Este README viene configurado para el oficial.**
-
-1. Descarga el último `.zip` desde [**Releases**](https://github.com/SethNubth/SethTraductorHispano/releases)
-2. Descomprime en: `C:\...\World of Warcraft\_forever_\Interface\AddOns\`
-3. **CRÍTICO:** Asegúrate que la carpeta se llame exactamente `SethTraductorHispano`. Si te baja como `SethTraductorHispano-main`, renómbrala.
-4. Inicia el juego y activa el addon en la selección de personaje. Verás el icono del loro en verde.
-
-git push origin main
-
-Opción 2: Para servidores privados (WotLK 3.3.5a)
-
-Si juegas en privado, abre el archivo `SethTraductorHispano.toc` y cambia la primera línea:
-
-.toc
-## Interface: 30300
-Aquí tienes el *README ULTRA PRO* nivel addons de 10k estrellas en CurseForge. Este es el definitivo, con todo:
-
-Copia y pega esto tal cual en tu `README.md`:
-<p align="center">
-  <img src="Logo_Translate.png" width="400" alt="SethTraductorHispano Loro Edition"/>
-</p>
-
-<h1 align="center">🦜 SethTraductorHispano — Loro Edition</h1>
-
-<p align="center">
-  <b>El addon hispano esencial para World of Warcraft: Forever</b><br/>
-  <i>Traduce. Copia. El loro te avisa.</i>
-</p>
-
-
-
-Opción 2: Para servidores privados (WotLK 3.3.5a)
-
-Si juegas en privado, abre el archivo `SethTraductorHispano.toc` y cambia la primera línea:
-
-```toc
-Interface: 30300
-Y muévelo a `.../Interface/AddOns/`
-
-🔧 Tabla de Compatibilidad
-Servidor	Interface	Carpeta	Estado
-**WoW: Forever OFICIAL (Blizzard) 1.60.1**	`16001`	`_forever_/Interface/AddOns/`	✅ Soporte Total
-**Privado (WotLK 3.3.5a)**	`30300`	`Interface/AddOns/`	✅ Compatible
-Retail / Classic Era / Cata	-	-	❌ No soportado
----
-
-🖼️ Contenido del Pack
-SethTraductorHispano/
-├── SethTraductorHispano.toc      # Manifiesto oficial 16001
-├── SethTraductorHispano.lua      # Código + Avisador + Loro
-├── Icon.tga                      # Icono 64x64 para lista de addons
-├── Loro.tga                      # Imagen 512x512 del loro
-├── Logo_Translate.png            # Logo para GitHub
-├── README.md                     # Este archivo
-├── CHANGELOG.md                  # Historial de cambios
-├── .pkgmeta                      # Para CurseForge
-└── .gitignore                    # Limpieza de repo
----
-
-📜 Changelog
-
-Ver el historial completo en [*CHANGELOG.md*](CHANGELOG.md)
-
-*v1.6 Loro Edition - Actual*
-- Nuevo icono oficial Loro + TRANSLATE
-- Frame de bienvenida + Avisador de update
-- Migración total a 16001 (Forever Oficial)
+Si te sirvió, deja una ⭐ en GitHub. ¡El loro te lo agradecerá!
 
 ---
-
-🤝 Soporte y Autor
-
-Hecho con ❤️ por *SethNubth* para la comunidad hispana.
-
-- ¿Bug? ¿Idea? Abre un https://github.com/SethNubth/SethTraductorHispano/issues
-- ¿Te sirvió? Deja una ⭐ en GitHub, el loro te lo agradecerá.
-
-<p align="center">
-  <b>Traduce, copia y sigue leveando... que el loro avisa.</b> 🦜
-</p>
-
----
-
-<p align="center">
-  <sub>World of Warcraft: Forever es marca de Blizzard Entertainment. Este addon es un proyecto de fans, no afiliado a Blizzard.</sub>
-</p>
-
-Con este README cuando alguien entre a tu GitHub va a ver:
-
-- Logo centrado gigante
-- Badges verdes y azules profesionales
-- Tabla de compatibilidad
-- Instrucciones para oficial y privado
-- Estructura del pack
-- Footer legal
+<p align="center">MIT License - 2026 SethNubth</p>
