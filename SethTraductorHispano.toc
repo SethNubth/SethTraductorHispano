@@ -1,5 +1,7 @@
 ## Interface: 110000
-## Title: SethTraductorHispano - WoForever
-## Notes: Traduce jugador a jugador Alianza<>Horda + EN<>ES
-## Version: 1.0
+## Title: SethTraductorHispano |cFF00FF00- WoForever|r
+## Notes: Traductor + Copiar links de todos los chats
+## Author: SethNubth
+## Version: 1.5
+## SavedVariables: SethTraductorDB
 SethTraductorHispano.lua
