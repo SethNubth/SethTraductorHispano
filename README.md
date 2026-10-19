@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="Logo_Translate.png" width="220" alt="SethTraductorHispano">
-</p>
+  <img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/b670fd26-38c8-47f1-a297-f74fd10f343f" />
+
 
 <h1 align="center">🦜 SethTraductorHispano</h1>
 <h3 align="center">Loro Edition - Traductor Oficial para WoW Forever</h3>
