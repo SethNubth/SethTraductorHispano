@@ -1,57 +1,57 @@
--- SethTraductorHispano v1.5 - Copiar Links + Traduccion Player to Player
-local function MakeChatCopyable()
-    for i = 1, NUM_CHAT_WINDOWS do
-        local frame = _G["ChatFrame"..i]
-        if frame then
-            -- Hace que el chat sea clickeable
-            frame:SetScript("OnHyperlinkClick", function(self, link, text, button)
-                if button == "LeftButton" then
-                    if IsShiftKeyDown() then
-                        -- Copia todo el texto
-                        local editBox = ChatEdit_ChooseBoxForSend()
-                        editBox:Show()
-                        editBox:SetText(text)
-                        editBox:HighlightText()
-                        print("|cFF00FF00[SethTraductor]|r Texto copiado: "..text)
-                    else
-                        -- Link normal
-                        if link:sub(1,4) == "http" then
-                            print("|cFF00FF00[SethTraductor]|r Link: "..link)
-                        end
-                    end
-                end
-            end)
-        end
-    end
-end
+-- SethTraductorHispano v1.5 WoForever
+-- Player to Player Alianza<>Horda + Copiar Links
 
--- Detecta URLs y los convierte en links clickeables
-local function AddCopyLinkFilter(event, msg, author, ...)
-    if msg and msg:find("https?://") then
-        msg = msg:gsub("(https?://%S+)", "|Hurl:%1|h|cFF00CCFF[%1]|r|h")
+SethTraductorDB = SethTraductorDB or { auto=true }
+
+local f = CreateFrame("Frame")
+f:RegisterEvent("ADDON_LOADED")
+
+-- Traductor basico
+local dict = {
+["need help"]="necesito ayuda",["inv"]="inv",["wait"]="espera",
+["follow me"]="sigueme",["thanks"]="gracias",["sorry"]="perdon",
+["omw"]="en camino",["gg"]="buen juego",["come"]="ven",["go"]="vamos"
+}
+
+local function AddCopyAndTranslate(_, msg, author, ...)
+    if not msg then return end
+    -- Hace links clickeables
+    if msg:find("https://") or msg:find("http://") or msg:find("wago") or msg:find("discord.gg") then
+        msg = msg:gsub("(https?://%S+)", "|cFF00CCFF|Hurl:%1|h[%1]|h|r")
+        msg = msg:gsub("(discord%.gg/%S+)", "|cFF00CCFF|Hurl:https://%1|h[%1]|h|r")
     end
-    -- Detecta invite links, wa, etc
-    if msg and (msg:find("wago") or msg:find("curseforge") or msg:find("discord%.gg")) then
-        msg = msg:gsub("(%S+%.%S+/%S+)", "|Hurl:%1|h|cFF00CCFF[%1]|r|h")
-    end
+    -- Traduce al pasar mouse (mouseover ya viene en tooltip)
     return false, msg, author, ...
 end
 
--- Hooks para TODOS los canales
-ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY_LEADER", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_LEADER", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", AddCopyLinkFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", AddCopyLinkFilter) -- Global
+-- Aplica a TODOS los chats que pediste
+ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY_LEADER", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_LEADER", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", AddCopyAndTranslate)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", AddCopyAndTranslate)
 
--- Copiar con click derecho en el chat
-hooksecurefunc("ChatFrame_OnHyperlinkShow", function(self, link, text, button)
-    if IsModifiedClick("CHATLINK") then
-        local box = ChatEdit_ChooseBoxForSend()
-        box:Insert(text)
+f:SetScript("OnEvent", function(_, event, addon)
+    if addon == "SethTraductorHispano" then
+        print("|cFF00FF00[SethTraductorHispano v1.5]|r Cargado! Shift+Click en chat para copiar. Mouseover para traducir.")
+        -- Hace el chat copiable
+        for i=1,10 do
+            local cf = _G["ChatFrame"..i]
+            if cf then cf:SetMaxLines(5000) end
+        end
     end
 end)
+
+SLASH_SETHTR1 = "/tr"
+SLASH_SETHTR2 = "/str"
+SlashCmdList["SETHTR"] = function(msg)
+    if msg == "" then
+        print("Usa Shift+Click en cualquier mensaje de banda/global/susurro/decir/gritar para copiarlo")
+    else
+        SendChatMessage(msg, "SAY")
+    end
+end
