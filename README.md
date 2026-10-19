@@ -1,7 +1,8 @@
 # SethTraductorHispano-
 World of Warcraft: Forever
 # SethTraductorHispano - WoForever
-https://github.com/SethNubth/SethTraductorHispano/blob/3728700265965053a0c729442f700a36b92c14f0/IMG-20261019-WA5574.jpg
+
+<img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/9ba696bf-4303-4238-9c31-c0e8909f4c92" />
 
 ![Version](https://img.shields.io/badge/version-1.5-blue)
 ![WoW](https://img.shields.io/badge/WoW-Forever%20%7C%20Retail%2011.0-green)
