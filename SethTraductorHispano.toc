@@ -1,8 +1,9 @@
 ## Interface: 30300
-## Title: |cFF00FF00SethTraductorHispano|r - WoForever
-## Notes: Traductor + Copiar links de todos los chats - Hecho por SethNubth
+## Title: |cFF00FF00SethTraductorHispano|r - |cFFFFFF00Loro Edition|r
+## Notes: Traductor + Copiar links + Loro parlante - Hecho por SethNubth para WoForever
 ## Author: SethNubth
-## Version: 1.5.1-Fixed Forever
+## Version: 1.6-Loro Edition
+## IconTexture: Interface\AddOns\SethTraductorHispano\Icon.tga
 ## SavedVariables: SethTraductorDB
 
 SethTraductorHispano.lua
