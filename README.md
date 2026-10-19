@@ -48,6 +48,25 @@ Hecho para la comunidad hispana de **WoForever**.
 - ✅ WoW Retail 11.0+
 - ✅ WotLK / Cataclysm Classic (parcial)
 - ✅ Compatible con ElvUI y BetterChat
+- # SethTraductorHispano 🇨🇴
+
+Addon para **WoForever** que traduce Alianza ↔ Horda y EN ↔ ES + copia links de cualquier chat.
+
+### 🚀 Lo que hace
+- Traduce player to player en Say/Yell (Adiós al `Gul'rok`)
+- Mouseover: pasas el mouse por un mensaje en inglés y lo ves en español
+- Shift+Click en CUALQUIER chat para copiar: Decir, Gritar, Banda, Global, Susurro, Hermandad
+- Links clickeables: wago, discord.gg, https://
+
+### 📥 Instalación
+1. Descarga ZIP (Code > Download ZIP)
+2. Extrae en `Interface/AddOns/SethTraductorHispano`
+3. Dentro deben quedar 2 archivos: `.toc` y `.lua`
+4. `/reload` en el juego
+
+### ⌨️ Uso
+Shift + Click Izquierdo sobre cualquier mensaje = Copiar
+
 
 ### 🚀 Roadmap
 
@@ -55,11 +74,11 @@ Hecho para la comunidad hispana de **WoForever**.
 - [ ] Ventana flotante con historial traducido
 - [ ] Integración con SethCoreQuest 7.0
 
-### 👤 Autor
+### Hecho por
+SethNubth para la comunidad hispana de WoForever. 
+Si te sirvió deja una ⭐
 
-**SethNubth** - Para la comunidad hispana de WoForever
 
-> Si te sirvió, deja una ⭐ en GitHub
 > Addon para WoForever que traduce player a player Alianza <> Horda y EN <> ES + copiar links de todos los chats con Shift+Click
 
 ### 📄 Licencia
