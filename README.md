@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-1.6--Loro%20Edition-brightgreen?style=for-the-badge" alt="Version">
+  <imgsrc="https://img.shields.io/badge/Version-1.6--Loro%20Edition-brightgreen?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/WoW-Forever%20Oficial%20%7C%2016001-00AEEF?style=for-the-badge" alt="Forever">
   <img src="https://img.shields.io/badge/Autor-SethNubth-FFD700?style=for-the-badge" alt="Author">
   <img src="https://img.shields.io/github/stars/SethNubth/SethTraductorHispano?style=for-the-badge" alt="Stars">
