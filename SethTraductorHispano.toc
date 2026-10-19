@@ -2,9 +2,7 @@
 ## Title: |cFF00FF00SethTraductorHispano|r - WoForever
 ## Notes: Traductor + Copiar links de todos los chats - Hecho por SethNubth
 ## Author: SethNubth
-## Version: 1.5.1-Fixed
+## Version: 1.5.1-Fixed Forever
 ## SavedVariables: SethTraductorDB
 
-Core.lua
-Config.lua
-ChatCopy.lua
+SethTraductorHispano.lua
