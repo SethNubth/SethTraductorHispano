@@ -1,6 +1,6 @@
-## Interface: 30300
+## Interface: 16001
 ## Title: |cFF00FF00SethTraductorHispano|r - |cFFFFFF00Loro Edition|r
-## Notes: Traductor + Copiar links + Loro parlante + Avisador de actualización - Hecho por SethNubth para WoForever
+## Notes: Traductor + Copiar links + Loro parlante + Avisador de actualización - Hecho por SethNubth para WoW Forever Oficial
 ## Author: SethNubth
 ## Version: 1.6-Loro Edition
 ## IconTexture: Interface\AddOns\SethTraductorHispano\Icon.tga
