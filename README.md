@@ -37,7 +37,28 @@ git push origin main
 | 🔔 | **Avisador de Actualización** | Detecta si hay nueva versión en GitHub. Te muestra popup con el link y mensaje en chat. Nunca te quedas desactualizado. |
 | 💬 | **Comandos Útiles** | `/seth` `/loro` `/seth show` `/seth hide` `/seth version` |
 | 🟢 | **100% Compatible** | Hecho nativamente para la API de **Forever Oficial 1.60.1 (Interface: 16001)**. Sin librerías pesadas.
+### 🦜 SethTraductorHispano - Loro Edition | Forever Oficial
 
+Primera versión oficial para **WoW Forever 1.60.1 (Interface: 16001)**
+
+#### ✨ ¿Qué hace?
+- Traduce automáticamente las misiones de EN a ES en tiempo real
+- Aviso con sonido de loro cuando hay actualización
+- Comando `/seth` para probar la traducción
+- 100% compatible con Forever Beta
+
+#### 📦 Instalación
+1. Descarga el `SethTraductorHispano-v1.6.zip` abajo
+2. Extrae en `World of Warcraft\_classic_beta_\Interface\AddOns\`
+3. Dentro del juego haz `/reload`
+
+#### 🔧 Changelog v1.6
+- Interface actualizado a 16001
+- Logo Loro Edition agregado
+- Optimización de traducción
+- MIT License
+
+Hecho con ❤️ para la comunidad hispana de Forever por SethNubth
 ---
 
 ### 📥 Instalación
@@ -49,8 +70,7 @@ git push origin main
 2. Descomprime en: `C:\...\World of Warcraft\_forever_\Interface\AddOns\`
 3. **CRÍTICO:** Asegúrate que la carpeta se llame exactamente `SethTraductorHispano`. Si te baja como `SethTraductorHispano-main`, renómbrala.
 4. Inicia el juego y activa el addon en la selección de personaje. Verás el icono del loro en verde.
-5. git add .
-git commit -m "v1.6 Loro Edition Forever Oficial 16001"
+
 git push origin main
 
 Opción 2: Para servidores privados (WotLK 3.3.5a)
