@@ -1,91 +1,79 @@
-# SethTraductorHispano-
-World of Warcraft: Forever
-# SethTraductorHispano - WoForever
+# 🦜 SethTraductorHispano — Loro Edition
 
-<img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/9ba696bf-4303-4238-9c31-c0e8909f4c92" />
+<p align="center">
+  <img src="Logo_Translate.png" width="350" alt="Seth Loro Translate">
+</p>
 
-![Version](https://img.shields.io/badge/version-1.5-blue)
-![WoW](https://img.shields.io/badge/WoW-Forever%20%7C%20Retail%2011.0-green)
-![Language](https://img.shields.io/badge/lang-ES%20%3C%3E%20EN-red-yellow)
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.6--Loro%20Edition-brightgreen?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/WoW-Forever%20Oficial%20%7C%2016001-00AEEF?style=for-the-badge" alt="Forever">
+  <img src="https://img.shields.io/badge/Autor-SethNubth-FFD700?style=for-the-badge" alt="Author">
+  <img src="https://img.shields.io/github/stars/SethNubth/SethTraductorHispano?style=for-the-badge" alt="Stars">
+</p>
 
-Traductor **Player to Player** Alianza ↔ Horda + Inglés ↔ Español + Copiar Links de cualquier chat.
+> **El addon hispano esencial para World of Warcraft: Forever.**
+> Traduce, copia links con un click y te recibe tu loro parlante al entrar.
 
-Hecho para la comunidad hispana de **WoForever**.
+---
 
-### ✨ Funciones
+### ✨ Características
 
-- **Player to Player real:** Traduce Alianza ↔ Horda en mundo abierto (Say / Yell)
-- **Mouseover Translate:** Pasa el mouse por encima de cualquier mensaje en inglés y lo ves en español
-- **Copiar Links:** 
-    - Say / Decir
-    - Yell / Gritar  
-    - Party / Banda
-    - Raid / Banda de asalto
-    - Guild / Hermandad
-    - Whisper / Susurro
-    - Global / Canales
-- **Shift + Click:** Copia cualquier mensaje del chat al instante
-- **Links clickeables:** `https://`, `wago.io`, `curseforge`, `discord.gg` en azul clickeable
+| Función | Descripción |
+| :--- | :--- |
+| 🦜 **Loro Parlante** | Ventana animada al iniciar sesión. Arrastrable, se cierra con click o en 6s. |
+| 🔗 **Copiar Links** | `Shift + Click Izquierdo` en cualquier link `[Item] [Logro] [Misión]` para copiarlo al chat. |
+| 🔔 **Avisador Inteligente** | Si hay nueva versión en GitHub, te muestra popup y mensaje en rojo al loguear. |
+| 💬 **Comandos** | `/seth` , `/loro` , `/seth show` , `/seth hide` , `/seth version` |
+| 🟢 **Compatible 100%** | Diseñado nativamente para la API de **Forever 1.60.1 (16001)**. |
 
-### 📦 Instalación
+### 📥 Instalación
 
-1. Descarga el último release en [Releases]
-2. Descomprime en `World of Warcraft/_retail_/Interface/AddOns/`
-3. Renombra la carpeta a `SethTraductorHispano`
-4. Activa en la selección de personajes > AddOns
-5. `/reload` dentro del juego
-6. 
-### 🎮 Uso
+#### Para WoW Forever OFICIAL (Blizzard)
 
-| Comando | Qué hace |
-|---------|----------|
-| `Shift + Click Izq` en mensaje | Copia el mensaje completo |
-| Click en link azul | Copia / abre link |
-| `/tr <mensaje>` | Envía mensaje traducido a SAY |
-| `/str` | Ver ayuda |
+1.  Ve a **Releases** y descarga `SethTraductorHispano-v1.6-Loro-Edition.zip`
+2.  Descomprime en: `.../World of Warcraft/_forever_/Interface/AddOns/`
+3.  **IMPORTANTE:** La carpeta debe llamarse exactamente `SethTraductorHispano` (si te baja como `SethTraductorHispano-main`, renómbrala)
+4.  Entra al juego, en selección de personaje activa el addon. Ya te saldrá con icono verde 🟢
 
 ### 🔧 Compatibilidad
 
-- ✅ WoForever (principal)
-- ✅ WoW Retail 11.0+
-- ✅ WotLK / Cataclysm Classic (parcial)
-- ✅ Compatible con ElvUI y BetterChat
-- # SethTraductorHispano 🇨🇴
+Este addon tiene dos sabores. Este README viene configurado para el **OFICIAL**.
 
-Addon para **WoForever** que traduce Alianza ↔ Horda y EN ↔ ES + copia links de cualquier chat.
+| Servidor | Interface en tu `.toc` | Ruta de Addons |
+| :--- | :--- | :--- |
+| **WoW: Forever OFICIAL (Blizzard)** | `## Interface: 16001` | `_forever_/Interface/AddOns/` |
+| **WoForever Privado (WotLK 3.3.5a)** | `## Interface: 30300` | `Interface/AddOns/` |
 
-### 🚀 Lo que hace
-- Traduce player to player en Say/Yell (Adiós al `Gul'rok`)
-- Mouseover: pasas el mouse por un mensaje en inglés y lo ves en español
-- Shift+Click en CUALQUIER chat para copiar: Decir, Gritar, Banda, Global, Susurro, Hermandad
-- Links clickeables: wago, discord.gg, https://
+> ¿Juegas en privado? Solo abre `SethTraductorHispano.toc` y cambia la primera línea a `30300`.
 
-### 📥 Instalación
-1. Descarga ZIP (Code > Download ZIP)
-2. Extrae en `Interface/AddOns/SethTraductorHispano`
-3. Dentro deben quedar 2 archivos: `.toc` y `.lua`
-4. `/reload` en el juego
+### 🖼️ Iconos Incluidos
 
-### ⌨️ Uso
-Shift + Click Izquierdo sobre cualquier mensaje = Copiar
+- `Icon.tga` (64x64) - Icono para la lista de Addons
+- `Loro.tga` (512x512) - Imagen del loro para la ventana de bienvenida
+- `Logo_Translate.png` - Logo para este README
 
+### 📜 Changelog
 
-### 🚀 Roadmap
+**v1.6 Loro Edition (Actual)**
+- Nuevo icono oficial: Loro + Tecla TRANSLATE
+- Frame de bienvenida del loro animado y movible
+- Sistema de avisador de actualización con popup
+- Migración total a Interface 16001 (API Retail / Forever Oficial)
+- Fix de `Shift+Click` para copiar links compatible con 16001
 
-- [ ] Traducción automática con Google API offline
-- [ ] Ventana flotante con historial traducido
-- [ ] Integración con SethCoreQuest 7.0
+**v1.5.1**
+- Fix inicial para copiar links en Forever
 
-### Hecho por
-SethNubth para la comunidad hispana de WoForever. 
-Si te sirvió deja una ⭐
+### 👤 Autor & Créditos
 
+Hecho con ❤️ por **SethNubth** para la comunidad hispana de WoW Forever.
 
-> Addon para WoForever que traduce player a player Alianza <> Horda y EN <> ES + copiar links de todos los chats con Shift+Click
+- GitHub: [@SethNubth](https://github.com/SethNubth)
+- Proyecto: `SethTraductorHispano`
 
-### 📄 Licencia
-
-MIT - Úsalo libre, solo mantén los créditos.
+Si te sirvió, deja una ⭐ en el repo. ¡El loro te lo agradecerá!
 
 ---
-Hecho con ❤️ para que Alianza y Horda se entiendan por fin.
+<p align="center">
+  <i>"Traduce, copia y sigue leveando, que el loro avisa."</i> 🦜
+</p>
