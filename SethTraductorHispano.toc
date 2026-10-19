@@ -1,1 +1,4 @@
-
+-- Lógica player-to-player
+-- Si detecta "zug, lok, gul" -> avisa que es Horda
+-- Si detecta "need help, inv, wait" -> lo traduce a ES automático
+-- Comando /tr <mensaje> para responder
