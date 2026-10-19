@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="Logo_Translate.png" width="400" alt="SethTraductorHispano Loro Edition"/>
-</p>
+  <img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/e746fec9-0448-435f-9b6a-cd4b49cf8cbb" />
+
 
 <h1 align="center">🦜 SethTraductorHispano — Loro Edition</h1>
 
