@@ -1,0 +1,6 @@
+package-as: SethTraductorHispano
+manual-changelog: CHANGELOG.md
+enable-nolib-creation: yes
+game-versions:
+    - forever
+interface: 16001
