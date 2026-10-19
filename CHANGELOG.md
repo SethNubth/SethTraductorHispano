@@ -65,10 +65,7 @@ All notable changes to this project will be documented here.
 - `CC en proceso! (x/3)` / `CC OK - DPS Lady`
 - Soporte IDs 71289, 71290, 72027, 72028, 73020, 68904
 
-### Changed
-## Changelog
-Ver [CHANGELOG.md](CHANGELOG.md) - v1.9.1 FINAL PRO
-- Eliminado modo biberón con explicaciones de clase
+### Changed 
 
 ## [1.0.0] - 2026-10-17 - Initial
 - Detector base Lady Susurramuerte
