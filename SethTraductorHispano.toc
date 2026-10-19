@@ -1,4 +1,5 @@
--- Lógica player-to-player
--- Si detecta "zug, lok, gul" -> avisa que es Horda
--- Si detecta "need help, inv, wait" -> lo traduce a ES automático
--- Comando /tr <mensaje> para responder
+## Interface: 110000
+## Title: SethTraductorHispano - WoForever
+## Notes: Traduce jugador a jugador Alianza<>Horda + EN<>ES
+## Version: 1.0
+SethTraductorHispano.lua
