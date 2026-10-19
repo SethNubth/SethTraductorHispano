@@ -47,6 +47,9 @@
 2. Descomprime en: `C:\...\World of Warcraft\_forever_\Interface\AddOns\`
 3. **CRÍTICO:** Asegúrate que la carpeta se llame exactamente `SethTraductorHispano`. Si te baja como `SethTraductorHispano-main`, renómbrala.
 4. Inicia el juego y activa el addon en la selección de personaje. Verás el icono del loro en verde.
+5. git add .
+git commit -m "v1.6 Loro Edition Forever Oficial 16001"
+git push origin main
 
 Opción 2: Para servidores privados (WotLK 3.3.5a)
 
