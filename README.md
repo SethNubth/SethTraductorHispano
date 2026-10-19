@@ -3,7 +3,9 @@
 
 
 <h1 align="center">🦜 SethTraductorHispano — Loro Edition</h1>
-
+git add .
+git commit -m "v1.6 Loro Edition Forever Oficial 16001"
+git push origin main
 <p align="center">
   <b>El addon hispano esencial para World of Warcraft: Forever</b><br/>
   <i>Traduce. Copia. El loro te avisa.</i>
