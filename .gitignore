@@ -1,0 +1,26 @@
+# WoW - No subir datos de tu cuenta
+WTF/
+Cache/
+Logs/
+Screenshots/
+Interface/AddOns/SethTraductorHispano/WTF/
+
+# No subir zips ni temporales
+*.zip
+*.rar
+*.tmp
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores de código
+.vscode/
+.idea/
+*.code-workspace
+
+# Git
+*.swp
+*~
