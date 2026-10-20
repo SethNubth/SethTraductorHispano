@@ -1,10 +1,9 @@
 ## Interface: 16001
-## Title: |cFF00FF00SethTraductorHispano|r - |cFFFFFF00Loro Edition|r
-## Notes: Traductor + Copiar links + Loro + Biblioteca Full ES - Para WoW Forever Oficial
+## Title: |cFF00FF00SethTraductorHispano|r - Loro Edition
+## Notes: Traductor Oficial EN->ES + Traductor de Chat para WoW Forever
 ## Author: SethNubth
-## Version: 1.7-Loro Edition Biblioteca Full
+## Version: 1.8.0
+## OptionalDeps: Forever Hispano Companion, ForeverHispanoCompanion, ForeverCompanion
 ## SavedVariables: SethTraductorDB
-## OptionalDeps: Forever Hispano Companion
-
 Libs\SethBiblioteca.lua
 SethTraductorHispano.lua
