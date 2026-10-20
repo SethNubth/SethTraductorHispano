@@ -1,51 +1,30 @@
--- SethBiblioteca.lua FULL - Forever Oficial 16001
+-- SethBiblioteca FULL v1.8 + Traductor de Chat frases
 SethLib = {
- -- UI BASE
- ["Quests"]="Misiones", ["Quest"]="Misión", ["Quest Log"]="Registro de misiones",
- ["Abandon"]="Abandonar", ["Share"]="Compartir", ["Track"]="Rastrear",
- ["Objectives"]="Objetivos", ["Requirements"]="Requisitos", ["Rewards"]="Recompensas",
- ["Choose your reward:"]="Elige tu recompensa:", ["Complete"]="Completar",
- ["Available"]="Disponible", ["Completed"]="Completado", ["Incomplete"]="Incompleto",
- ["Rested"]="Descansado", ["Inventory"]="Inventario", ["Character"]="Personaje",
- ["Spellbook"]="Libro de hechizos", ["Abilities"]="Habilidades", ["Spells"]="Hechizos",
- ["Talents"]="Talentos", ["Glyphs"]="Glifos", ["Options"]="Opciones",
- ["AddOn List"]="Lista de Addons", ["AddOns"]="Addons", ["Enable All"]="Activar todos",
- ["Disable All"]="Desactivar todos", ["Average CPU"]="CPU Promedio", ["Memory"]="Memoria",
- ["Search"]="Buscar", ["Close"]="Cerrar", ["Accept"]="Aceptar", ["Decline"]="Rechazar",
+ -- UI
+ ["Quests"]="Misiones", ["Quest"]="Misión", ["Abandon"]="Abandonar", ["Share"]="Compartir",
+ ["Objectives"]="Objetivos", ["Rewards"]="Recompensas", ["Completed"]="Completado",
+ ["Inventory"]="Inventario", ["Character"]="Personaje", ["Spellbook"]="Hechizos",
+ ["Talents"]="Talentos", ["AddOn List"]="Lista de Addons",
 
- -- CAZADOR (tu clase)
- ["Hunter"]="Cazador", ["Pet"]="Mascota", ["Call Pet"]="Llamar mascota",
- ["Dismiss Pet"]="Abandonar mascota", ["Feed Pet"]="Alimentar mascota",
- ["Mend Pet"]="Curar mascota", ["Revive Pet"]="Revivir mascota",
- ["Tame Beast"]="Domar bestia", ["Beast Mastery"]="Dominio de bestias",
- ["Steady Shot"]="Disparo firme", ["Auto Shot"]="Disparo automático",
- ["Arcane Shot"]="Disparo arcano", ["Concussive Shot"]="Disparo de conmoción",
- ["Hunter's Mark"]="Marca del cazador", ["Aspect of the Viper"]="Aspecto de la víbora",
- ["Aspect of the Hawk"]="Aspecto del halcón",
-
- -- OTRAS CLASES
- ["Fireball"]="Bola de Fuego", ["Frostbolt"]="Descarga de Escarcha",
- ["Heal"]="Sanar", ["Flash Heal"]="Sanación relámpago",
- ["Shadow Bolt"]="Descarga de las Sombras", ["Warrior"]="Guerrero",
- ["Mage"]="Mago", ["Priest"]="Sacerdote", ["Rogue"]="Pícaro",
- ["Druid"]="Druida", ["Paladin"]="Paladín", ["Shaman"]="Chamán",
- ["Warlock"]="Brujo", ["Death Knight"]="Caballero de la Muerte",
-
- -- CHAT
- ["Say"]="Decir", ["Yell"]="Gritar", ["Party"]="Grupo", ["Guild"]="Hermandad",
- ["Raid"]="Banda", ["Trade"]="Comercio", ["General"]="General",
- ["LookingForGroup"]="Buscando grupo",
-
- -- ADDONS QUE VISTE EN TU VIDEO
- ["Hunter Ammo Forever"]="Munición de Cazador Forever",
- ["Hunter Pet Atlas"]="Atlas de Mascotas",
- ["BetterBlizzPlates"]="Placas Mejoradas",
- ["MinimapButtonButton"]="Botón de Minimapa",
- ["Forever Companion"]="Compañero Forever",
+ -- CHAT TRADUCTOR - Frases de CurseForge
+ ["LFG"]="Busco Grupo", ["LFM"]="Busco Más", ["Looking for group"]="Buscando grupo",
+ ["Looking for more"]="Buscando más", ["WTS"]="Vendo", ["WTB"]="Compro",
+ ["WTT"]="Intercambio", ["WTS"]="Vendo", ["LF Tank"]="Busco Tanque",
+ ["LF Healer"]="Busco Sanador", ["LF DPS"]="Busco DPS", ["Healer"]="Sanador",
+ ["Tank"]="Tanque", ["DPS"]="Daño", ["Dungeon"]="Mazmorra", ["Raid"]="Banda",
+ ["Heroic"]="Heroico", ["Need all"]="Necesito todo", ["Need healer"]="Necesito sanador",
+ ["Need tank"]="Necesito tanque", ["Invite"]="Invitar", ["Inv"]="Inv",
+ [" whisper me"]=" susurrame", [" whisper"]=" susurro",
+ ["Gold"]="Oro", ["Cheap"]="Barato", ["Free"]="Gratis",
+ 
+ -- Cazador
+ ["Hunter"]="Cazador", ["Pet"]="Mascota", ["Feed Pet"]="Alimentar mascota",
+ ["Mend Pet"]="Curar mascota", ["Call Pet"]="Llamar mascota",
 }
 
 function Seth_TranslateGlobal(txt)
   if not txt or type(txt)~="string" then return txt end
+  -- Traduce frases largas primero
   for en, es in pairs(SethLib) do
     txt = string.gsub(txt, en, es)
   end
