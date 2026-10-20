@@ -1,10 +1,10 @@
--- SethTraductorHispano v1.6-Loro Edition
+-- SethTraductorHispano v1.7-Loro Edition Full Biblioteca
 -- Para World of Warcraft: Forever Oficial (Interface 16001)
--- Hecho por SethNubth
+-- Hecho por SethNubth - Ahora con traducción EN->ES
 
 local ADDON_NAME = "SethTraductorHispano"
-local VERSION_ACTUAL = "1.6"
-local VERSION_GITHUB = "1.7" -- Cambia cuando saques nueva versión
+local VERSION_ACTUAL = "1.7"
+local VERSION_GITHUB = "1.7"
 local LINK_GITHUB = "https://github.com/SethNubth/SethTraductorHispano"
 
 local f = CreateFrame("Frame")
@@ -19,30 +19,58 @@ f:SetScript("OnEvent", function(self, event, arg1)
   end
 
   if event == "PLAYER_LOGIN" then
-    print("|cFF00FF00[SethTraductorHispano]|r v"..VERSION_ACTUAL.." Loro Edition cargado! |cFFFFFF00Shift+Click en link para copiar|r - /seth")
+    print("|cFF00FF00[SethTraductorHispano]|r v"..VERSION_ACTUAL.." Loro Edition cargado! |cFFFFFF00Shift+Click en link para copiar|r - /seth - Biblioteca: "..(SethLib and "OK" or "FALTA"))
 
-    -- AVISADOR DE ACTUALIZACION
+    -- ===== NUEVO: TRADUCTOR AUTOMATICO EN->ES =====
+    if SethLib then
+      -- Traduce chat usando la biblioteca
+      local function FiltroTraductor(_, _, msg)
+        if not msg then return false end
+        local traducido = Seth_TranslateGlobal(msg)
+        if traducido ~= msg then
+          return false, traducido
+        end
+        return false
+      end
+      ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", FiltroTraductor)
+      ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", FiltroTraductor)
+      ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", FiltroTraductor)
+      ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", FiltroTraductor)
+      ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY", FiltroTraductor)
+
+      -- Traduce Tooltips (habilidades, misiones)
+      hooksecurefunc("GameTooltip", "SetText", function(self, text)
+        if text and SethLib then
+          local t = Seth_TranslateGlobal(text)
+          if t ~= text then
+            local name = self:GetName()
+            if _G[name.."TextLeft1"] then
+              _G[name.."TextLeft1"]:SetText(t)
+            end
+          end
+        end
+      end)
+    end
+    -- ===== FIN TRADUCTOR =====
+
+    -- AVISADOR DE ACTUALIZACION (tu código original)
     if VERSION_ACTUAL ~= VERSION_GITHUB then
       print("|cFFFF0000[Seth]|r ¡NUEVA VERSIÓN v"..VERSION_GITHUB.." disponible! -> "..LINK_GITHUB)
       StaticPopupDialogs["SETH_UPDATE"] = {
         text = "SethTraductorHispano\nTienes v"..VERSION_ACTUAL.."\n¡Hay v"..VERSION_GITHUB.." disponible!\n\n¿Copiar link?",
-        button1 = "Copiar Link",
-        button2 = "Luego",
+        button1 = "Copiar Link", button2 = "Luego",
         OnAccept = function()
           ChatFrame1EditBox:Show()
           ChatFrame1EditBox:SetText(LINK_GITHUB)
           ChatFrame1EditBox:HighlightText()
           ChatFrame1EditBox:SetFocus()
         end,
-        timeout = 0,
-        whileDead = true,
-        hideOnEscape = true,
-        preferredIndex = 3,
+        timeout = 0, whileDead = true, hideOnEscape = true, preferredIndex = 3,
       }
       C_Timer.After(4, function() StaticPopup_Show("SETH_UPDATE") end)
     end
 
-    -- COPIAR LINKS SHIFT+CLICK - Compatible 16001
+    -- COPIAR LINKS SHIFT+CLICK (tu código original)
     for i=1,15 do
       local cf = _G["ChatFrame"..i]
       if cf then
@@ -61,7 +89,7 @@ f:SetScript("OnEvent", function(self, event, arg1)
       end
     end
 
-    -- FRAME LORO
+    -- FRAME LORO (tu código original)
     local loroFrame = CreateFrame("Frame", "SethLoroFrame", UIParent)
     loroFrame:SetSize(420, 420)
     loroFrame:SetPoint("CENTER", 0, 80)
@@ -71,24 +99,12 @@ f:SetScript("OnEvent", function(self, event, arg1)
     loroFrame:RegisterForDrag("LeftButton")
     loroFrame:SetScript("OnDragStart", function(s) s:StartMoving() end)
     loroFrame:SetScript("OnDragStop", function(s) s:StopMovingOrSizing() end)
-
-    local bg = loroFrame:CreateTexture(nil, "BACKGROUND")
-    bg:SetAllPoints()
-    bg:SetColorTexture(0,0,0,0.5)
-
-    local tex = loroFrame:CreateTexture(nil, "ARTWORK")
-    tex:SetPoint("TOP", 0, 0)
-    tex:SetSize(350, 350)
+    local bg = loroFrame:CreateTexture(nil, "BACKGROUND") bg:SetAllPoints() bg:SetColorTexture(0,0,0,0.5)
+    local tex = loroFrame:CreateTexture(nil, "ARTWORK") tex:SetPoint("TOP", 0, 0) tex:SetSize(350, 350)
     tex:SetTexture("Interface\\AddOns\\SethTraductorHispano\\Loro.tga")
-
     local txt = loroFrame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
     txt:SetPoint("BOTTOM", 0, 20)
-    if VERSION_ACTUAL ~= VERSION_GITHUB then
-      txt:SetText("|cFF00FF00SethTraductorHispano|r v"..VERSION_ACTUAL.."\n|cFFFF0000¡Actualización v"..VERSION_GITHUB.."!|r")
-    else
-      txt:SetText("|cFF00FF00SethTraductorHispano|r v"..VERSION_ACTUAL.." Loro Edition")
-    end
-
+    txt:SetText("|cFF00FF00SethTraductorHispano|r v"..VERSION_ACTUAL.." Loro Edition")
     C_Timer.After(6, function() if loroFrame then loroFrame:Hide() end end)
     loroFrame:SetScript("OnMouseDown", function(self) self:Hide() end)
     _G.SethLoroFrame = loroFrame
@@ -99,13 +115,8 @@ SLASH_SETHTRADUCTOR1 = "/seth"
 SLASH_SETHTRADUCTOR2 = "/loro"
 SlashCmdList["SETHTRADUCTOR"] = function(msg)
   msg = string.lower(msg or "")
-  if msg == "show" then
-    if _G.SethLoroFrame then _G.SethLoroFrame:Show() end
-  elseif msg == "hide" then
-    if _G.SethLoroFrame then _G.SethLoroFrame:Hide() end
-  elseif msg == "version" or msg == "ver" then
-    print("|cFF00FF00SethTraductorHispano|r Actual: v"..VERSION_ACTUAL.." | GitHub: v"..VERSION_GITHUB)
-  else
-    print("|cFF00FF00SethTraductorHispano|r v"..VERSION_ACTUAL.." - /seth show | /seth hide | /seth version")
-  end
+  if msg == "show" then if _G.SethLoroFrame then _G.SethLoroFrame:Show() end
+  elseif msg == "hide" then if _G.SethLoroFrame then _G.SethLoroFrame:Hide() end
+  elseif msg == "version" or msg == "ver" then print("|cFF00FF00Seth|r Actual: v"..VERSION_ACTUAL.." | GitHub: v"..VERSION_GITHUB)
+  else print("|cFF00FF00SethTraductorHispano|r v"..VERSION_ACTUAL.." - /seth show | /seth hide | /seth version") end
 end
