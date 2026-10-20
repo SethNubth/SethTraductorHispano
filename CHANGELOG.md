@@ -1,5 +1,18 @@
 # Changelog - SethTraductorHispano
 
+### v1.8 - Loro Edition Biblioteca Full + Traductor de Chat
+- Fusión con addon Traductor de Chat de CurseForge (https://www.curseforge.com/wow/addons/traductor-de-chat)
+- Traducción automática de canales: SAY, YELL, GUILD, PARTY, RAID, TRADE, LFG, WHISPER
+- Nuevo formato [ES] + Original
+- Tooltip con ALT para traducir mensaje
+- Biblioteca ampliada: LFG, LFM, WTS, WTB, LF Tank/Healer/DPS, etc
+- Fix Interface 16001 Forever Oficial
+
+### v1.7 - Biblioteca Full
+- Conexión con Libs/SethBiblioteca.lua
+- Seth_TranslateGlobal() integrado
+- Soporte Forever Hispano Companion
+
 ## [1.6-Loro Edition] - 2026-10-19
 ### Added
 - Nuevo icono oficial Loro + TRANSLATE (Icon.tga 64, Loro.tga 512)
