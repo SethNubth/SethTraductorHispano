@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/SethNubth/SethTraductorHispano/releases"><img src="https://img.shields.io/github/v/release/SethNubth/SethTraductorHispano?label=Version&style=for-the-badge&color=brightgreen"></a>
   <a href="https://github.com/SethNubth/SethTraductorHispano/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SethNubth/SethTraductorHispano?label=License&style=for-the-badge"></a>
-  <img src="https://img.shields.io/badge/Game-Forever%201.60.1-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Game-Forever%201.80.1-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Interface-16001-orange?style=for-the-badge">
 </p>
 
