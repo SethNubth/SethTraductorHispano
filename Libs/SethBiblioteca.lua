@@ -16,7 +16,20 @@ SethLib = {
  ["Need tank"]="Necesito tanque", ["Invite"]="Invitar", ["Inv"]="Inv",
  [" whisper me"]=" susurrame", [" whisper"]=" susurro",
  ["Gold"]="Oro", ["Cheap"]="Barato", ["Free"]="Gratis",
- 
+
+ -- RAE CORRECTO ESPAÑOL
+  ["Hello!"] = "¡Hola!",
+  ["Hi!"] = "¡Hola!",
+  ["Hello"] = "¡Hola!",
+  ["What are you doing?"] = "¿Qué haces?",
+  ["What are you doing"] = "¿Qué haces?",
+  ["What?"] = "¿Qué?",
+  ["What!"] = "¡Qué!",
+  ["How are you?"] = "¿Cómo estás?",
+  ["Where are you?"] = "¿Dónde estás?",
+  ["Help!"] = "¡Ayuda!",
+  ["Help me!"] = "¡Ayúdame!",
+  
  -- Cazador
  ["Hunter"]="Cazador", ["Pet"]="Mascota", ["Feed Pet"]="Alimentar mascota",
  ["Mend Pet"]="Curar mascota", ["Call Pet"]="Llamar mascota",
