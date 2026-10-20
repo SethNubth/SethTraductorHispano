@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/b670fd26-38c8-47f1-a297-f74fd10f343f" />
+  <img width="1800" height="1600" alt="image" src="https://github.com/user-attachments/assets/b670fd26-38c8-47f1-a297-f74fd10f343f" />
 
 
 <h1 align="center">🦜 SethTraductorHispano</h1>
