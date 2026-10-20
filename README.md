@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1800" height="1600" alt="image" src="https://github.com/user-attachments/assets/b670fd26-38c8-47f1-a297-f74fd10f343f" />
+  <img width="1600" height="1600" alt="image" src="https://github.com/user-attachments/assets/b670fd26-38c8-47f1-a297-f74fd10f343f" />
 
 
 <h1 align="center">🦜 SethTraductorHispano</h1>
@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/SethNubth/SethTraductorHispano/releases"><img src="https://img.shields.io/github/v/release/SethNubth/SethTraductorHispano?label=Version&style=for-the-badge&color=brightgreen"></a>
   <a href="https://github.com/SethNubth/SethTraductorHispano/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SethNubth/SethTraductorHispano?label=License&style=for-the-badge"></a>
-  <img src="https://img.shields.io/badge/Game-Forever%201.80.1-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Game-Forever%201.60.1-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Interface-16001-orange?style=for-the-badge">
 </p>
 
