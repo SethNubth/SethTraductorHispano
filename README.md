@@ -33,7 +33,7 @@ Ya no más traductor de Google a lado. El loro traduce por ti.
 3. Entra al juego y escribe `/reload`
 
 Tiene que quedarte así:
-`.../AddOns/SethTraductorHispano/SethTraductorHispano.toc`
+`.../AddOns/SethTraductorHispano
 
 ### 🎮 Comandos
 | Comando | Función |
